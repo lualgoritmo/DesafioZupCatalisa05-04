@@ -57,7 +57,8 @@ public class App {
     }
     public static void salvarSalario(double[] salario) {
         for(int i= 0; i < salario.length; i++){   
-            System.out.println("Mês: "+ "  " + (i+1) + " Salário" + salario[i]);
+            System.out.println("Mês: "+ "  " + (i+1)+" ");
+            System.out.printf("Salário: %.2f%n", salario[i]);
         }
     }
     public static double[] calcularSalario(double[] mes1) {
@@ -87,7 +88,7 @@ public class App {
     public static void mostarImposto(double[] imposto) {
         for(int i = 0; i < imposto.length; i++){
             System.out.println("Valor do Imposto");
-            System.out.println(imposto[i]);
+            System.out.printf("%.2f%n",imposto[i]);
         }
     }
 }
