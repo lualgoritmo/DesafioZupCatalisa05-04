@@ -4,13 +4,13 @@ public class App {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         String[] usuarios = new String[2];
-        double[] mes = new double[2];
+        double[] mes = new double[12];
         while(true){
             System.out.println("Menu-Opções:");
             System.out.println("Para sair digite 0");
-            System.out.println("Cadastrar 1");
+            System.out.println("Cadastrar Usuário 1");
             System.out.println("Calcula Imposto 2");
-            System.out.println("Mostrar 3");
+            System.out.println("Mostrar Dados 3");
             int opcao = sc.nextInt();
         
             if(opcao == 0){
