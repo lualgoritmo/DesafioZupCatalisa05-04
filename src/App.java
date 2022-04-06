@@ -11,7 +11,7 @@ public class App {
             System.out.println("Calcula Salário 2");
             System.out.println("Mostrar 3");
             int opcao = sc.nextInt();
-            double[] n = new double[2];
+            double[] mesPago = new double[2];
             if(opcao == 0){
                 System.exit(0);
             }
@@ -20,12 +20,12 @@ public class App {
                 calcularSalario();
             }
             else if(opcao == 2){
-                n = calcularSalario();
+                mesPago = calcularSalario();
             }
             else if(opcao == 3){
-                for(int i = 0; i < n.length; i++){
+                for(int i = 0; i < mesPago.length; i++){
                     System.out.println("Salários Cadastrados");
-                    System.out.println(n);
+                    System.out.println(mesPago[i]);
                 }
             }
             else{
